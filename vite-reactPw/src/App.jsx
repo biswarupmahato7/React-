@@ -1,5 +1,9 @@
 
 import './App.css'
+// import DogPic from'./DogPic'
+import {DogPic,CatImg} from './DogPic'
+
+
 
 function App() {
  
@@ -13,6 +17,10 @@ function App() {
           Submit
         </span>
       </button>
+      <DogPic></DogPic>
+      <DogPic></DogPic>
+      <CatImg></CatImg>
+     
     </>
   )
 }
