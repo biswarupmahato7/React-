@@ -1,10 +1,14 @@
+
+import Image  from "./image"
 //component
-export function DogPic(){
+export function DogPic(props){
     return(
         <div>
             {/* <CatImg/> */}
-            <h3>Bruno</h3>
-            <img src="https://images.pexels.com/photos/169524/pexels-photo-169524.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+            <h3>{props.name}</h3>
+            
+            <Image src={props.image}></Image>
+            
         </div>
         
 
