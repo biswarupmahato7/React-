@@ -1,0 +1,15 @@
+.grid{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+    /* margin-top: 70px; */
+}
+
+.turn{
+    margin-top: 40px;
+    color: wheat;
+    font-size: 20px;
+}
