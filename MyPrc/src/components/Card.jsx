@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 // eslint-disable-next-line react/prop-types
-function Card({name, btnText ="More"}) {
+function Card({name, surname,btnText ="More"}) {
   console.log(`name ${name} `);
   return (
     <>
@@ -13,7 +14,7 @@ function Card({name, btnText ="More"}) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
         <div className="absolute bottom-4 left-4 text-left">
-          <h1 className="text-lg font-semibold text-white">{name}</h1>
+          <h1 className="text-lg font-semibold text-white">{name} {surname}</h1>
           <p className="mt-2 text-sm text-gray-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
             debitis?

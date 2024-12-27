@@ -1,10 +1,14 @@
+import NameDisplay from "./components/NameDisplay"
+import ToggleButton from "./components/ToggleButton"
+import Example from "./components/ToggleButton"
 
 
 function App() {
   
 
   return (
-    <h1>Chai or React with Vite | Biswarup Mahato</h1>
+    // <ToggleButton/>
+    <NameDisplay/>
    
   )
 }
