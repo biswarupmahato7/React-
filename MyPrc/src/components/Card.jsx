@@ -1,31 +1,33 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState, useEffect } from 'react';
 
-// eslint-disable-next-line react/prop-types
-function Card({name, surname,btnText ="More"}) {
-  console.log(`name ${name} `);
+const Card = () => {
+  const [count, setCount] = useState(() => {
+
+    const storedCount = localStorage.getItem('val');
+    return storedCount ? parseInt(storedCount, 10) : 0;
+  });
+
+
+  useEffect(() => {
+    localStorage.setItem('val', count);
+  }, [count]);
+
+  const decrement = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
+
   return (
-    <>
-      <div className="relative h-[400px] w-[300px] rounded-md">
-        <img
-          src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
-          alt="AirMax Pro"
-          className="z-0 h-full w-full rounded-md object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-        <div className="absolute bottom-4 left-4 text-left">
-          <h1 className="text-lg font-semibold text-white">{name} {surname}</h1>
-          <p className="mt-2 text-sm text-gray-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-            debitis?
-          </p>
-          <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
-            {btnText} →
-          </button>
-        </div>
-      </div>
-    </>
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+      <button onClick={() => setCount(0)}>Reset</button>
+    </div>
   );
-}
+};
 
 export default Card;
+
