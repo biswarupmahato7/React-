@@ -1,23 +1,30 @@
 # React + Vite
 Hi, Biswarup here 👋
+<h1>__Instructions to Run the To-Do List App__</h1>
 
-**Instructions to Run the To-Do List App**
+<h2>🔗Deployed Link - https://todolist-biswa.vercel.app/</h2>
+
 Download and Extract the Zip File
 Extract the contents of the ZIP file to a folder on their system.
-**Install Node.js**
+
+<h2>__Install Node.js__</h2>
 
 Ensure that Node.js is installed on your computer.
 If not, download and install it from Node.js Official Website.
-**Open the Project in a Code Editor**
+<h2>__Open the Project in a Code Editor__</h2>
 
 Open the extracted folder in their favorite code editor (e.g., Visual Studio Code).
-**Install Dependencies**
+<h2>__Install Dependencies__</h2>
 
 Open a terminal in the project folder.
-**Run the following command to install the required dependencies:**
-_npm install_
-**Run the Development Server**
-_npm run dev_
+###__Run the following command to install the required dependencies:__
+
+👉 _npm install_
+
+<h3>Run the Development Server</h3>
+
+
+👉 _npm run dev_
 
 
 
